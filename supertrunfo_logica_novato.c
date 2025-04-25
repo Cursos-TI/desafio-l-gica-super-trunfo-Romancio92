@@ -95,21 +95,21 @@ int main() {
     printf(" RESULTADO COMPARAÇAO PIB: %d\n RESULTADO COMPARAÇAO PONTO TURISTICO: %d\n RESULTADO COMPARAÇAO PIB PER CAPITA:%d\n", resultadopib, resultadopontoturistico, resultadopibpc);
     printf(" RESULTADO COMPARAÇAO POPULAÇAO: %d\n RESULTADO COMPARAÇAO SUPER PODER: %d\n", resultadopopulacao, resultadosuperpoder);
 
-    if(populacao1 > populacao2) {
-        printf("\n Carta 1 venceu! \n");
-    } else {
-        printf("\n Carta 2 venceu! \n");
-    }
-
+    //imprimir a comparação das cartas com base no atributo população
     printf("\n COMPARAÇÃO ENTRE CARTAS (ATRIBUTO: POPULAÇÃO) \n");
     printf(" Carta 1: %s - %lu \n", cidade1, populacao1);
     printf(" Carta 2: %s - %lu \n", cidade2, populacao2);
-    printf(" A cidade vencedora é: %s",cidade1);
+        
+    //estrutura de decisão if/else para decidir carta vencedora
+    if(populacao1 > populacao2) {
+        printf("\n Carta 1 venceu! \n");
+        printf(" A cidade vencedora é: %s",cidade1);
+    } else {
+        printf("\n Carta 2 venceu! \n");
+        printf(" A cidade vencedora é: %s",cidade2);
+    }
 
-
-
+    
     //finalizar a função principal
     return 0;
-
-
 }
